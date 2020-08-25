@@ -1,0 +1,6 @@
+2. Volatile keyword is used to mark a Java variable as “being stored in main memory.” More precisely that means, that every read of a volatile variable will be read from computer’s main memory, not from CPU cache, and every write to a volatile variable will be written to main memory, and not just to the CPU cache
+
+3. Non-blocking data structure: AtomicBoolean, AtomicInteger, AtomicLong, AtomicReference
+Blocking data structure: BlockingQueue
+
+5. Compare and Swap is a technique used when designing concurrent algorithms. Basically, CAS compares an expected value to the concrete value of a variable, and if the concrete value of the variable is equal to the expected value, swaps the value of the variable for a new variable.
