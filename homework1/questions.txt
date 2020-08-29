@@ -1,6 +1,22 @@
-2. Volatile keyword is used to mark a Java variable as “being stored in main memory.” More precisely that means, that every read of a volatile variable will be read from computer’s main memory, not from CPU cache, and every write to a volatile variable will be written to main memory, and not just to the CPU cache
+1.Difference between string, stringBuffer, stringBuilder
+string is immutable whereas stringBuffer and StringBuilder are mutable classes
+StringBuffer is thread-safe and synchronized whereas StringBuilder is not. That's why stringBuilder is faster
+String concatenation operator + internally uses StringBuffer or StringBuilder class
+
+2.What is volatile and synchronized
+Volatile keyword is used to mark a Java variable as “being stored in main memory.” More precisely that means,
+that every read of a volatile variable will be read from computer’s main memory, not from CPU cache,
+and every write to a volatile variable will be written to main memory, and not just to the CPU cache.
 
 3. Non-blocking data structure: AtomicBoolean, AtomicInteger, AtomicLong, AtomicReference
 Blocking data structure: BlockingQueue
 
+4. What is immutable?
+An object is immutable if its state cannot change after construction. Immutable objects don't expose any way for other objects to
+modify their state; the object's fields are initialized only once inside the constructor and never change again
+
 5. Compare and Swap is a technique used when designing concurrent algorithms. Basically, CAS compares an expected value to the concrete value of a variable, and if the concrete value of the variable is equal to the expected value, swaps the value of the variable for a new variable.
+
+6. What are checked exception and unchecked exceptions?
+Checked exceptions are forced by compiler and used to indicate exceptional conditions that are out of control of the program,
+while unchecked exceptions are occured during runtime and used to indicate programming errors.
